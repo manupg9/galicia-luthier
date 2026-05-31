@@ -1,16 +1,48 @@
-# React + Vite
+# 🎸 Galicia-Luthier
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tienda online de instrumentos artesanales elaborados en Galicia. Proyecto Final de Ciclo de Desarrollo de Aplicaciones Web.
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React + Vite
+- Firebase (Authentication, Firestore)
+- Stripe (pagos)
+- React Router DOM
 
-## React Compiler
+## Instalación y ejecución
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clona el repositorio:
+   git clone https://github.com/manupg9/galicia-luthier.git
 
-## Expanding the ESLint configuration
+2. Instala las dependencias:
+   npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Inicia el servidor de desarrollo:
+   npm run dev
+
+4. Abre el navegador en http://localhost:5173
+
+## Funcionalidades
+
+- Registro y login con email/contraseña
+- Email de confirmación al registrarse
+- Catálogo de productos con filtros y paginación
+- Detalle de producto
+- Carrito de compra
+- Favoritos
+- Lista de deseos (productos sin stock)
+- Proceso de pago con Stripe
+- Panel de administración (CRUD de productos)
+
+## Credenciales de prueba
+
+- Admin: admin@galicialuthier.com
+- Tarjeta de prueba Stripe: 4242 4242 4242 4242 | 12/29 | 123
+
+## Estructura del proyecto
+
+src/
+├── components/   → Navbar
+├── context/      → AuthContext, CartContext
+├── pages/        → Todas las páginas
+└── firebase.js   → Configuración de Firebase
